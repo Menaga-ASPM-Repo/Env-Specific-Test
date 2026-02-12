@@ -24,4 +24,6 @@ RUN apk --no-cache add curl lsof ca-certificates \
   && adduser -D nonpriv # create user and group
 USER nonpriv
 COPY --from=GOLANG /tmp/myapp /app/myapp
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost/ || exit 1
 CMD ["/app/myapp", "start"]
