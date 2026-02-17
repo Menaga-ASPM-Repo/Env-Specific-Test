@@ -126,7 +126,7 @@ Production Database:
 
 Cloud Infrastructure:
   Account ID: ACME-CLOUD-92731
-  API Key: ak_live_7y2JHGd8sKlM9nPzXqRt5vWx
+
 
 ```
 
