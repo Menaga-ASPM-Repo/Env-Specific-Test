@@ -96,7 +96,7 @@ def read_file(filename: str) -> str:
         
         # Try with public directory prefix if the direct path doesn't exist
         elif os.path.exists(f"/tmp/dvmcp_challenge3/public/{filename}"):
-            with open(f"/tmp/dvmcp_challenge3/public/{filename}", "r") as f:
+
                 return f.read()
         else:
             return f"Error: File '{filename}' not found."
